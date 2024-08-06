@@ -1,0 +1,6 @@
+**Database Name: orrsphp**
+
+**Admin Login Details**
+
+Email   : admin@mail.com
+Password: codeastro.com
