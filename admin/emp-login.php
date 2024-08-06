@@ -1,4 +1,3 @@
-<!-- Server side code for log in-->
 <?php
     session_start();
     include('assets/inc/config.php');//get configuration file
@@ -17,6 +16,7 @@
       if($rs)
       {//if its sucessfull
         header("location:emp-dashboard.php");
+        exit();
       }
 
       else
