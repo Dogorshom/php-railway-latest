@@ -16,7 +16,6 @@
       if($rs)
       {//if its sucessfull
         header("location:pass-dashboard.php");
-        exit();
       }
 
       else
