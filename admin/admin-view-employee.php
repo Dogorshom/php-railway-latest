@@ -1,5 +1,4 @@
- <!--Server side code to handle passenger sign up-->
- <?php
+<?php
 	session_start();
 	include('assets/inc/config.php');
 		if(isset($_POST['update_profile']))
