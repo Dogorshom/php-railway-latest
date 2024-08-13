@@ -1,4 +1,4 @@
- <?php
+<?php
 	session_start();
 	include('assets/inc/config.php');
 		if(isset($_POST['Create_Profile']))
@@ -38,7 +38,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<!--Head-->
 <?php include('assets/inc/head.php');?>
 <!--End Head-->
   <body>
