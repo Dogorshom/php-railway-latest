@@ -54,7 +54,7 @@
         <div class="main-content container-fluid">
           <div class="splash-container forgot-password">
             <div class="card card-border-color card-border-color-success">
-              <div class="card-header"><img class="logo-img" src="assets/img/logo-xx.png" alt="logo" width="102" height="#{conf.logoHeight}"><span class="splash-description">Forgot your password?</span></div>
+              <div class="card-header"><img class="logo-img" src="assets/img/logo-xx.png" alt="logo" width="102px" height="102px"><span class="splash-description">Forgot your password?</span></div>
               <div class="card-body">
               <?php if(isset($success)) {?>
 
