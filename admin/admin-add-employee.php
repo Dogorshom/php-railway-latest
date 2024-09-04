@@ -12,11 +12,12 @@
 			$emp_uname=$_POST['emp_uname'];
       $emp_email=$_POST['emp_email'];
       $emp_dept=$_POST['emp_dept'];
+      $emp_dpic='default.png';
 			$emp_pwd=sha1(md5($_POST['emp_pwd']));
       //sql to insert captured values
-			$query="insert into orrs_employee (emp_fname, emp_lname, emp_phone, emp_addr, emp_nat_idno, emp_uname, emp_email, emp_dept, emp_pwd) values(?,?,?,?,?,?,?,?,?)";
+			$query="insert into orrs_employee (emp_fname, emp_lname, emp_phone, emp_addr, emp_nat_idno, emp_uname, emp_email, emp_dept, emp_pwd, emp_dpic) values(?,?,?,?,?,?,?,?,?,?)";
 			$stmt = $mysqli->prepare($query);
-			$rc=$stmt->bind_param('sssssssss',$emp_fname, $emp_lname, $emp_phone, $emp_addr, $emp_nat_idno, $emp_uname, $emp_email, $emp_dept, $emp_pwd);
+			$rc=$stmt->bind_param('ssssssssss',$emp_fname, $emp_lname, $emp_phone, $emp_addr, $emp_nat_idno, $emp_uname, $emp_email, $emp_dept, $emp_pwd, $emp_dpic);
 			$stmt->execute();
 			/*
 			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
